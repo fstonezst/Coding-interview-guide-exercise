@@ -2,11 +2,6 @@
  * Created by peter on 2017/3/2.
  */
 public class Chapter2_2 {
-    public static void main(String[] args){
-        Integer[] list = new Integer[]{1,2,3,4,5};
-        Node head = buildList(list);
-        System.out.print(removeLastKthNode(head,3).data+"|");
-    }
 
     public static Node removeLastKthNode(Node head, int k){
         //head 为头指针
@@ -58,24 +53,27 @@ public class Chapter2_2 {
         return p;
     }
 
-    static class Node <T extends Comparable>{
+
+
+
+    /*static class Node <T extends Comparable>{
         T data ;
         Node next;
         public Node(T data){
             this.data = data;
         }
-    }
+    }*/
 
-    static class DoubleNode<T> {
+    /*static class DoubleNode<T> {
         T data;
         DoubleNode next;
         DoubleNode last;
         public DoubleNode(T data){
             this.data = data;
         }
-    }
+    }*/
 
-    public static <T extends Comparable> Node buildList(T[] list){
+    /*public static <T extends Comparable> Node buildList(T[] list){
         Node head = new Node(list[0]);
         Node p = head;
         for(int i = 1;i<list.length;i++){
@@ -85,5 +83,5 @@ public class Chapter2_2 {
             p = newNode;
         }
         return head;
-    }
+    }*/
 }

@@ -19,12 +19,12 @@ public class Chapter2_1 {
         }
     }
 
-    class Node <T extends Comparable>{
+    /*class Node <T extends Comparable>{
         T data ;
         Node next;
         public Node(T data){
             this.data = data;
         }
-    }
+    }*/
 }
 
